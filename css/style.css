@@ -1,0 +1,101 @@
+/* globals */
+body {
+    text-align: center;
+    background: url('../images/background-cork.jpg');
+}
+.flex {
+    display: flex;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+}
+/*lines area */
+h1 {
+  font-family: 'Tangerine', serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+#notecon {
+    margin: auto;
+    width: 660px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 4px, 4px, 4px, #aaa;
+}
+#note {
+    width: 100%;
+    overflow: hidden;
+}
+div > textarea {
+    width: 100%;
+    height: 200px;
+    resize:none;
+    overflow: auto;
+    border: none;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;      
+    background: url('../images/note.jpg');
+}
+.inputs {
+    width: 240px !important; 
+    margin: 0 5px ;
+}
+
+hr {
+    border: .5px solid #94521c;
+}
+/*notes area*/
+#notepanel {
+    width: 98%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.panelnote {
+    position: relative;
+    background:url('../images/notepaper.png') no-repeat;
+    width:274px;
+    height: 348px;
+    
+}
+.panelnote > i {
+    position: absolute;
+    right: 2px;
+    top: 50px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.panelnote:hover i {
+    visibility: visible;
+}
+.textnote {
+    position: absolute;
+    top: 70px;
+    overflow: auto;
+    width: 274px;
+    height:250px;
+    word-wrap: break-word;
+}
+.datenote {
+    position: absolute;
+    top: 320px;  
+    width: 100%;
+    margin: auto;
+    text-align:left;
+   
+}
+
+@keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  .trans {
+  animation: fadeIn ease-in 1s;
+  }
